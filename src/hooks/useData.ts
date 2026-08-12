@@ -3,13 +3,9 @@ import { supabase } from '../lib/supabase';
 import type {
   Category,
   Ingredient,
-  MenuItem,
   MenuItemWithCategory,
-  Order,
-  OrderItem,
   OrderWithItems,
   RecipeItem,
-  StockLog,
   StockLogWithIngredient,
 } from '../types';
 

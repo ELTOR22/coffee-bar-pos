@@ -1,11 +1,11 @@
-import { useEffect, useMemo, useState } from 'react';
+import {  useMemo, useState } from 'react';
 import { Plus, Pencil, Trash2, Loader2, X, Link2, Coffee } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
 import { useCategories, useIngredients, useMenuItems, useRecipes } from '../../hooks/useData';
 import { useToast } from '../../components/Toast';
 import { Modal } from '../../components/Modal';
 import { formatCurrency } from '../../lib/format';
-import type { Ingredient, MenuItemWithCategory } from '../../types';
+import type { MenuItemWithCategory } from '../../types';
 
 interface EditState {
   id: string | null;

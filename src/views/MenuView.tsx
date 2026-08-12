@@ -64,9 +64,9 @@ export function MenuView({ onSwitchToAdmin }: { onSwitchToAdmin?: () => void }) 
     );
   }
 
-  function removeFromCart(id: string) {
-    setCart((prev) => prev.filter((c) => c.menuItem.id !== id));
-  }
+  // function removeFromCart(id: string) {
+  //   setCart((prev) => prev.filter((c) => c.menuItem.id !== id));
+  // }
 
   async function handlePlaceOrder() {
     if (cart.length === 0) return;
